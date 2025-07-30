@@ -85,4 +85,9 @@ Our analysis revealed several important insights into the 2013–2019 cryptocurr
 
 ---
 
+## Tableau Project
 
+
+📁 Here is the Tableau project file that has been imported and used for building the visualizations in this analysis -->
+
+---
