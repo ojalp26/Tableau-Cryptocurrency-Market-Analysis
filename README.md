@@ -57,6 +57,10 @@ Built using Tableau, the dashboard provides the following visuals:
 - 🔗 **Bitcoin vs Altcoins Correlation**  
   - Heatmap or correlation matrix visualizing inter-coin price relationships
 
+>  The image below showcases the interactive dashboard created using Tableau.
+<img width="1273" height="746" alt="Screenshot 2025-07-30 175747" src="https://github.com/user-attachments/assets/f4e112c4-8ba2-43d8-a893-03d75963e23d" />
+
+ 
 ---
 ## 🔑 Key Findings
 
