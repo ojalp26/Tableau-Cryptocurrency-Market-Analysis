@@ -58,30 +58,24 @@ Built using Tableau, the dashboard provides the following visuals:
   - Heatmap or correlation matrix visualizing inter-coin price relationships
 
 ---
+## 🔑 Key Findings
 
-## 🔍 Key Insights
+Our analysis revealed several important insights into the 2013–2019 cryptocurrency market:
 
-- 🚀 **2017 showed an exponential rise** in both price and volume  
-- 🪙 **Bitcoin consistently dominated** the market cap and volume charts  
-- ⚠️ **Volatility was extreme**, especially in smaller altcoins  
-- 📈 **Market trends closely mirrored Bitcoin** for most altcoins  
-- 📆 **Some day-of-week return patterns** emerged (but are not predictive)
+- 💥 **Explosive Growth & Volatility**: The market experienced phenomenal growth, particularly in late 2017, but was accompanied by significant volatility and sharp corrections.
 
----
+- 🪙 **Bitcoin's Enduring Dominance**: Bitcoin consistently led the market in terms of market cap and trading volume, often dictating overall market sentiment.
 
-## 🔮 Future Work
+- 🎢 **High Speculative Nature**: All cryptocurrencies showed high daily price volatility, with Bitcoin exhibiting the largest swings, reinforcing their speculative nature.
 
-- Extend analysis to include **2020–present** data  
-- Add external signals like **news sentiment** or **regulatory events**  
-- Use machine learning for **price prediction or anomaly detection**
+- 📊 **Market Cycles & Volume**: Trading volume closely mirrored market cycles, surging during bull runs and indicating heightened investor interest.
 
----
+- 📅 **Subtle Weekly Patterns**: Some minor average daily return patterns were observed across the week, though these are historical and not predictive.
 
-## 🤝 Contributions
+- 🔄 **Strong Bitcoin-Altcoin Correlation**: Major altcoins generally showed a positive correlation with Bitcoin's price movements, suggesting limited diversification benefits within the crypto space during this period.
 
-Contributions are welcome!  
-Feel free to fork, submit issues, or open pull requests.
+> For a more in-depth discussion of these findings and their implications, please refer to the `CONCLUSION.md` file.
 
 ---
 
-> 📌 _Note: Tableau dashboard screenshots and .twbx files can be added in this repo’s `/assets` or `/dashboard` folder_
+
