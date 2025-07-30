@@ -1,0 +1,71 @@
+Dashboard Charts Details
+
+This document provides a detailed breakdown of each chart included in the Tableau dashboard, outlining its purpose, configuration, and any calculated fields used.
+
+1. Total Cryptocurrency Market Capitalization Over Time
+   - Chart Type: Line Chart
+   - Purpose: To visualize the aggregate growth and decline of the top cryptocurrencies' market capitalization over the historical period
+   - Tableau Configuration:
+         - Columns Shelf: Date (set to Continuous Month or Year for aggregated view).
+         - Rows Shelf: SUM(Marketcap)
+         - Marks Card: Set to "Line".
+         - Color: Currency (to show individual currency contributions to the total).
+   - Calculated Fields Used: None.
+
+2. Daily Closing Price Trend by Currency
+    - Chart Type: Line Chart
+    - Purpose: To compare the historical daily closing price movements of different cryptocurrencies.
+    - Tableau Configuration:
+          - Columns Shelf: Date (set to Continuous Day or Month for trend).
+          - Rows Shelf: AVG(Close).
+          - Marks Card: Set to "Line".
+          - Color: Currency.
+           Filters Shelf: Currency (to allow selection of specific currencies for comparison).
+    - Calculated Fields Used: None.
+
+3. Average Daily Price Volatility (High - Low) by Currency
+     - Chart Type: Bar Chart
+     - Purpose: To identify which currencies experienced the largest average daily price swings, indicating higher volatility.
+     - Tableau Configuration:
+           - Columns Shelf: Currency.
+           - Rows Shelf: AVG(Daily Price Range).
+           - Sort: Currency sorted in descending order by AVG(Daily Price Range).
+     - Calculated Fields Used:
+       Daily Price Range: [High] - [Low]
+       Purpose: Calculates the absolute range between the daily high and low price for each record.
+
+4. Daily Trading Volume Over Time by Currency
+      - Chart Type: Area Chart
+      - Purpose: To understand the liquidity and trading activity for each cryptocurrency over time.
+      - Tableau Configuration:
+            - Columns Shelf: Date (set to Continuous Day or Month).
+            - Rows Shelf: SUM(Volume).
+            - Marks Card: Set to "Area".
+            - Color: Currency.
+            - Filters Shelf: Currency (to allow selection).
+       - Calculated Fields Used: None.
+
+5. Average Daily Return by Day of the Week
+       - Chart Type: Bar Chart
+       - Purpose: To analyze if certain days of the week historically showed better (or worse) returns for cryptocurrency trading.
+       - Tableau Configuration:
+             - Columns Shelf: Date (Right-click > More > Custom > Weekday).
+             - Rows Shelf: AVG(Daily Return Percentage).
+             - Sort: Weekday sorted by AVG(Daily Return Percentage).
+        - Calculated Fields Used:
+           Daily Return Percentage: (([Close] - [Open]) / [Open]) * 100
+           Purpose: Calculates the percentage change from the opening price to the closing price for each day.
+
+6. Bitcoin vs. Altcoin Daily Close Price Correlation
+       - Chart Type: Dual-Axis Line Chart (as adapted by user)
+       - Purpose: To visually assess the correlation between Bitcoin's daily closing price and a selected altcoin's daily closing price over time.
+       - Tableau Configuration:
+                - Columns Shelf: Year of Date (or Month of Date if more granularity is desired).
+                - Rows Shelf: AVG(Bitcoin Close) and AVG(Altcoin Close) (drag Altcoin Close to the right side of the AVG(Bitcoin Close) axis to create a dual axis).
+                - Marks Card: Both measures set to "Line".
+                - Filters Shelf: Currency (filtered to include only 'bitcoin' and the chosen altcoin, e.g., 'ethereum').
+        - Calculated Fields Used:
+            - Bitcoin Close: IF [Currency] = 'bitcoin' THEN [Close] END
+              Purpose: Isolates the closing price specifically for Bitcoin.
+            - Altcoin Close: IF [Currency] = '[Altcoin Name]' THEN [Close] END (e.g., IF [Currency] = 'ethereum' THEN [Close] END)
+              Purpose: Isolates the closing price for the selected altcoin.
