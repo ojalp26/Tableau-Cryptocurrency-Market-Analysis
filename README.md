@@ -1,4 +1,4 @@
-# 📊 Historical Cryptocurrency Market Analysis & Visualization (2013–2019)
+# 📊 Historical Cryptocurrency Market Analysis & Visualization
 
 > A Tableau-powered visual exploration of the crypto market from 2013 to 2019  
 > Based on data scraped from CoinMarketCap.com
