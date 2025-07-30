@@ -78,7 +78,7 @@ Our analysis revealed several important insights into the 2013–2019 cryptocurr
 
 - 🔄 **Strong Bitcoin-Altcoin Correlation**: Major altcoins generally showed a positive correlation with Bitcoin's price movements, suggesting limited diversification benefits within the crypto space during this period.
 
-> For a more in-depth discussion of these findings and their implications, please refer to the `Detailed Conclusion` file.
+> For a more in-depth discussion of these findings and their implications, please refer to the [Detailed Conclusion](https://github.com/ojalp26/Tableau-Cryptocurrency-Market-Analysis/blob/main/Detailed%20Conclusion) file.
 
 ---
 
